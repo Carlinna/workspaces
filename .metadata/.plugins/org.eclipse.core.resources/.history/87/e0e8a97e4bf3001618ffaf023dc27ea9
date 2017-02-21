@@ -1,0 +1,6 @@
+package jjcctest;
+
+@RunWith()
+public class SquareTest {
+
+}

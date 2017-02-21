@@ -1,0 +1,43 @@
+package jjcctest;
+
+import static org.junit.Assert.*;
+
+import org.junit.Before;
+import org.junit.Test;
+
+public class CalculatorTest {
+	
+	private Calculator c = new Calculator();
+
+	@Before
+	public void setUp() throws Exception {
+		c.clear();
+	}
+
+	@Test
+	public void testAdd() {
+		c.add(5);
+		c.add(6);
+		assertEquals(11,c.getResult());
+		//fail("Not yet implemented");
+	}
+
+	@Test
+	public void testSubstract() {
+		c.add(10);
+		c.substract(8);
+		assertEquals(2,c.getResult());
+		//fail("Not yet implemented");
+	}
+
+	@Test
+	public void testMultiply() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	public void testDivide() {
+		fail("Not yet implemented");
+	}
+
+}

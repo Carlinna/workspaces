@@ -1,0 +1,55 @@
+package jjcctest;
+
+import static org.junit.Assert.*;
+
+import java.util.Arrays;
+import java.util.Collection;
+
+import org.junit.Before;
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.junit.runners.Parameterized;
+import org.junit.runners.Parameterized.Parameters;
+
+@RunWith(Parameterized.class)
+public class SquareTest {
+	
+	private static Calculator c = new Calculator();
+
+	int param;
+	int result;
+	
+	@Before
+	public void setUp() throws Exception {
+		c.clear();
+	}
+
+
+	public SquareTest(int param, int result) {
+		super();
+		this.param = param;
+		this.result = result;
+	}
+
+
+	@Parameters
+	public static Collection data()  {
+
+        return  Arrays.asList( new  Object[][] {
+
+                { 2 ,  4 } ,
+
+                { 0 ,  0 } ,
+
+                {гн3 ,  9 } ,
+
+       } );
+        
+	}
+
+	@Test
+	public void testSquare() {
+		fail("Not yet implemented");
+	}
+
+}

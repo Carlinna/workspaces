@@ -1,0 +1,37 @@
+package jjcctest;
+
+import static org.junit.Assert.*;
+
+import org.junit.Before;
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.junit.runners.Parameterized;
+
+@RunWith(Parameterized.class)
+public class SquareTest {
+	
+	private Calculator c = new Calculator();
+
+	int param;
+	int result;
+	
+	@Before
+	public void setUp() throws Exception {
+		c.clear();
+	}
+
+
+	public SquareTest(int param, int result) {
+		super();
+		this.param = param;
+		this.result = result;
+	}
+
+
+
+	@Test
+	public void testSquare() {
+		fail("Not yet implemented");
+	}
+
+}
